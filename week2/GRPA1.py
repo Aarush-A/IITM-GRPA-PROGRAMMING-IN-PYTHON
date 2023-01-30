@@ -1,0 +1,19 @@
+*/Accept three positive integers as input and check if they form the sides of a right triangle. Print YES if they form one, and NO if they do not. The input will have three lines, with one integer on each line. The output should be a single line containing one of these two strings: YES or NO./*
+ a=int(input())
+b=int(input())
+c=int(input())
+if(a>b):
+    if(a>c):
+        temp=a
+        a=c
+        c=temp
+if(b>a):
+    if(b>c):
+        temp=b
+        b=c
+        c=temp
+check=a**2+b**2
+if(check==c**2):
+    print("YES")
+else:
+    print("NO")
